@@ -10,8 +10,8 @@
     "typecheck": "tsc -p tsconfig.json --noEmit"
   },
   "devDependencies": {
-    "@types/node": "catalog:",
+    "@types/node": "^25.3.3",
     "dotenv": "^17.3.1",
-    "tsx": "catalog:"
+    "tsx": "^4.21.0"
   }
 }

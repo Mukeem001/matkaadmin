@@ -3,7 +3,7 @@ services:
     name: matka-api-server
     env: node
     plan: free
-    buildCommand: "yarn install && yarn workspaces run build"
+    buildCommand: "yarn install --frozen-lockfile 2>/dev/null || yarn install && yarn workspace @workspace/api-server run build"
     startCommand: "cd artifacts/api-server && npm start"
     healthCheckPath: /api/health
     envVars:
